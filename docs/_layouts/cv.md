@@ -8,8 +8,21 @@ layout: default
 
 {%- assign cv_data = page.page_data | default: site.data.content.links[lng].page_data -%}
 
+{%- if page.img %}
+  {%- if site.data.conf.others.cv.header_img_with_img_tag == true -%}
+    {%- capture home_img_tag -%} <img src="{{ page.img }}" /> {%- endcapture -%}
+    {%- capture home_img_background_style -%} style="height: unset;" {%- endcapture -%}
+  {% else %}
+    {%- capture home_img_background_style -%} style="background-image:url('{{ page.img }}');" {%- endcapture -%}
+  {%- endif -%}
+{%- endif -%}
+
+
 <div class="multipurpose-container cv-heading-container">
-  <h1>{{ cv_data.main.header | default: "CV2" }}</h1>
+  <div class="home-heading" {{ home_img_background_style}}>
+  {{ home_img_tag }}
+  </div>
+  <h1>{{ cv_data.main.header | default: "CV" }}</h1>
   <p>{{ cv_data.main.info | default: "No data, check page_data in [language]/tabs/cv.md front matter or _data/content/cv/[language].yml" }}</p>
   <div class="multipurpose-button-wrapper">
     {%- for category in cv_data.category %}

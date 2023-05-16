@@ -32,10 +32,11 @@ image_lazy_loader_on: true
 #search_engine_exclude: true
 # to disable this page, simply set published: false or delete this file
 #published: false
+img: ":cv-heading.jpg"
 page_data:
   main:
-    header: "CV"
-    info: "CV of me."
+    header: "Curriculum Vitae"
+    info: "Test"
 
   category: 
     - title: "Work Experience"
@@ -50,6 +51,10 @@ page_data:
   list:
     - type: id_work
       title: "Junior Researcher"
-      info: "Test"
+      start_date: "Test"
+      end_date: ""
+      company: ""
+      description: ""
+
 
 ---

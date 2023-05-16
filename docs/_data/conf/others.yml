@@ -26,6 +26,11 @@ about:
   # to enable contact button, set to true
   show_contact_form_button: true
 
+####################### CV ###############################
+
+
+cv:
+  header_img_with_img_tag: false
 
 
 ######################### Links ###########################

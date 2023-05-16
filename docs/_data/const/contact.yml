@@ -24,7 +24,7 @@ mastodon:
   url: "https://mathstodon.xyz"
 orcid:
   icon: "fa fa-orcid"
-  url: "https://ordic.org/"
+  url: "https://orcid.org/"
 googlescholar:
   icon: "fa fa-graduation-cap"
   url: "https://scholar.google.com/"
