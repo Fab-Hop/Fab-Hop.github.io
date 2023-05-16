@@ -1,0 +1,161 @@
+# Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
+# Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
+# Copyright (c) 2022 Vitor DallAcqua https://github.com/fandangos
+# Licensed under MIT
+
+lng:
+  name: German
+  # based on ISO_639-1 https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+  code: de
+  # specifically needed for open-graph meta og:locale. if open_graph or html_lng_with_country_code not enabled in _data/conf/main.yml, it's not necessary.
+  # For html tags, you can enable or disable using html_lng_with_country_code defined in _data/conf/main.yml
+  # based on ISO_3166-1 https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+  country: DE
+  switch_title: De
+  offer:
+    title: Sprache
+    msg_page: Diese Seite auf Deutsch sehen.
+    # if page translation is not available, use this.
+    msg_site: To home
+
+date:
+  # if %b is used in the long format, it will be replaced with the corresponding item in 'months' list below.
+  long: "%-d %b, %Y"
+  day: "%d"
+  year: "%Y"
+  # months itself also used in Archive page.
+  months: [Jan, Feb, Mar, Apr, Mai, Jun, Jul, Aug, Sep, Okt, Nov, Dez]
+
+not_found:
+  header: Seite nicht gefunden.
+  line1: Die gewünschte Seite konnte leider nicht gefunden werden.
+  line2: Versuchen Sie es, wenn möglich, über das Menü.
+
+no_translation_tooltip: No Translation
+
+navigation:
+  contact_header: Kontakt
+
+color_scheme_switch_tooltip: Farbschema
+
+search:
+  placeholder: Suche
+  noResultText: Leider wurden keine Ergebnisse gefunden. 
+
+image_viewer:
+  load_error: Dieses Bild konnte nicht geladen werden.
+
+copyright:
+  additional_text: " Alle Rechte vorbehalten."
+
+creative_commons:
+  some_rights_reserved: .
+  # check _data/owner/[language].yml for license type.
+  by: Salvo previamente expresso, o conteúdo desse site usa a licença Creative Commons Attribution 4.0 International.
+  by-nd: Salvo previamente expresso, o conteúdo desse site usa a licença Creative Commons Attribution-NoDerivatives 4.0 International.
+  by-sa: Salvo previamente expresso, o conteúdo desse site usa a licença Creative Commons Attribution-ShareAlike 4.0 International.
+  by-nc: Salvo previamente expresso, o conteúdo desse site usa a licença Creative Commons Attribution-NonCommercial 4.0 International.
+  by-nc-nd: Salvo previamente expresso, o conteúdo desse site usa a licença Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International.
+  by-nc-sa: Salvo previamente expresso, o conteúdo desse site usa a licença Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
+
+# for 404 layout
+not-found:
+  title: "404"
+
+# for post layout
+post:
+  read_time:
+    unit: " min"
+    text: " leitura"
+    # c for char w for word
+    word_char: w
+    # char or words per minute
+    per_minute: 100
+  pager_buttons:
+    older_post: "← Ältere Posts"
+    newer_post: "Neuere Posts →"
+    first_post: Zuerst
+    last_post: Zuletzt
+  table_of_contents:
+    heading: Conteúdo
+    tooltip:
+      move: Arraste para mover
+      close: Fechar
+  share:
+    heading: Teilen
+    link_copied: Link kopiert
+    tooltip:
+      # keys need to match with _data/share.yml
+      twitter: Twitter
+      facebook: Facebook
+      telegram: Telegram
+      linkedin: LinkedIn
+      email: Email
+      copy_link: Link kopieren
+
+# for post-list layout
+post-list:
+  title: Blog
+  button_name: Blog
+  upside_down_tabs:
+    tab:
+      all: Alles
+      categories: Kategorien
+      tags: Tags
+      years: Jahre
+      clear: Löschen
+      close: Schließen
+      tooltip:
+        clear: Löschen
+        close: Schließen
+    msg:
+      property_list:
+        # keys need to match with /query/post-query.json
+        tags: Tag
+        category: Kategorie
+        year: Jahr
+      # you can use these wildcards, {property} {value} {thumb}
+      resultFoundTitleFormat: "{property} : {thumb}"
+
+# for home layout
+home:
+  title: Wiklkommen
+  button_name: Home
+  new_posts_title: Neues
+  new_posts_show_more_button: Mehr sehen ...
+
+# for archives layout
+archives:
+  title: Archiv
+  button_name: Archiv
+  page_header: Archiv
+
+# for about layout
+about:
+  title: Über mich
+  button_name: Über mich
+  email_title: E-Mail
+
+# for links layout
+links:
+  title: Links
+  button_name: Links
+  link_text: Webseite
+  info_text: Info
+
+# for projects layout
+projects:
+  title: Projekte
+  button_name: Projekte
+  read_more_text: Mehr lesen
+  read_less_text: Weniger lesen
+
+# for privacy-policy layout
+privacy-policy:
+  title: &privacy_policy_title Política de privacidade
+
+# constants to be replaced for
+constants:
+  greetings: Olá
+  welcome: Bem vindo
+  sample: Amostra
