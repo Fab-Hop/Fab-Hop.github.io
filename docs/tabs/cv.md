@@ -41,20 +41,56 @@ page_data:
   category: 
     - title: "Work Experience"
       type: id_work
-      color: "gray"
+      color: "#cce6ff"
     - title: "Teaching"
       type: id_teaching
-      color: "blue"
+      color: "#cce6ff"
     - title: "Education"
       type: id_education
-      color: "green"
-  list:
-    - type: id_work
-      title: "Junior Researcher"
-      start_date: "Test"
+      color: "#cce6ff"
+      
+  work_title: "Work Experience"
+  work_color: "#cce6ff"
+  work_list:
+    - title: "Junior Researcher"
+      start_date: "01.06.2019"
+      end_date: "01.03.2023"
+      company: "FIZ - Karlsruhe"
+      description: "Research on Zero-Shot Text Classification using Knowledge Graphs as auxiliary information as well as development of ontologies and Knowledge Graphs for research data management."
+    - title: "Thesis Student (Master of Science)"
+      start_date: ""
       end_date: ""
       company: ""
       description: ""
+    - title: "Research Assistant"
+      start_date: ""
+      end_date: ""
+      company: ""
+      description: ""
+    - title: "Thesis Student (Bachelor of Science)"
+      start_date: ""
+      end_date: ""
+      company: ""
+      description: ""
+  teaching_title: "Teaching"
+  teaching_color: "#cce6ff"
+  teaching_list: 
+    - title: ""
+
+  education_title: "Education"
+  education_color: "#cce6ff"
+  education_list:
+    - title: "Master of Science (Computer Science)"
+      start_date: ""
+      end_date: ""
+      university: "University of Applied Sciences Karlsruhe"
+      description: ""
+    - title: "Bachelor of Science (Computer Science)"
+      start_date: ""
+      end_date: ""
+      university: "University of Applied Sciences Karlsruhe"
+      description: ""
+
 
 
 ---

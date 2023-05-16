@@ -142,6 +142,12 @@ home:
 cv:
   title: CV
   button_name: CV
+  job_text: Position
+  company_text: Company
+  university_text: University
+  degree_text: Degree
+  start_text: Start
+  end_text: End
 
 
 publications:

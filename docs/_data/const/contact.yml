@@ -23,7 +23,7 @@ mastodon:
   icon: "/assets/img/default/mastodon.svg"
   url: "https://mathstodon.xyz"
 orcid:
-  icon: "fa fa-orcid"
+  icon: "fa fa-graduation-cap"
   url: "https://orcid.org/"
 googlescholar:
   icon: "fa fa-graduation-cap"
