@@ -9,5 +9,5 @@ layout: default
 {%- include multi_lng/get-lng-by-url.liquid -%}
 {%- assign lng = get_lng -%}
 <div class="multipurpose-container publications-container">
-    Page under construction. 
+    {{ content }}
 </div>

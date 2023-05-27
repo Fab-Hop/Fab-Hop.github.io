@@ -45,10 +45,10 @@ layout: default
     <tbody>
       {%- for list in cv_data.work_list %}
         <tr >
-          <td rowspan="2">
+          <td rowspan="2" style='vertical-align:middle'>
             <p>{{list.start_date}}</p>
           </td>
-          <td rowspan="2">
+          <td rowspan="2" style='vertical-align:middle'>
             <p>{{list.end_date}}</p>
           </td>
           <td>
@@ -76,7 +76,7 @@ layout: default
         <th>{{ site.data.lang[lng].cv.start_text}}</th>
         <th>{{ site.data.lang[lng].cv.end_text}}</th>
         <th>{{ site.data.lang[lng].cv.job_text }}</th>
-        <th>{{ site.data.lang[lng].cv.company_text }}</th>
+        <th>{{ site.data.lang[lng].cv.university_text }}</th>
       </tr>
     </thead>
     <tbody>
@@ -92,7 +92,7 @@ layout: default
             <p><b>{{list.title}}</b></p>
           </td>
           <td>
-            <p>{{ list.company }}</p>
+            <p>{{ list.institute }}</p>
           </td>
         </tr>
         <tr>
@@ -140,4 +140,7 @@ layout: default
       {%- endfor %}
     </tbody>
   </table>
+</div>
+<div class="multipurpose-container cv-container" id="skill" style="border-left-color:{{ cv_data.education_color }};">
+  <h2>{{ cv_data.skills_title}}</h2>
 </div>
