@@ -33,12 +33,8 @@ image_lazy_loader_on: true
 # to disable this page, simply set published: false or delete this file
 #published: false
 ---
-{% bibliography_count -f references %}
-------------------------
+# Summary
+Number of publications overall: {% bibliography_count --file my_publications %}
 
-The default Bibliography
-------------------------
-
-
-
-{% bibliography %}
+# Conference Proceedings
+{% bibliography --file my_publications %}
