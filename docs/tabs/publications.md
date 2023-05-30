@@ -33,4 +33,12 @@ image_lazy_loader_on: true
 # to disable this page, simply set published: false or delete this file
 #published: false
 ---
+{% bibliography_count -f references %}
+------------------------
 
+The default Bibliography
+------------------------
+
+
+
+{% bibliography %}

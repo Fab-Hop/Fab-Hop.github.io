@@ -1,31 +1,31 @@
 [
     {
-    "title"    : "My References"
+    "title"    : "Publications"
     ,"category" : ""
     ,"tags"     : ""
-    ,"url"      : "/test.html"
-    ,"date"     : "May 27, 2023"
-    ,"content"  : "{{ page.title }} ================ The default Bibliography ------------------------"
+    ,"url"      : "/tabs/publications.html"
+    ,"date"     : "May 30, 2023"
+    ,"content"  : "7 The default Bibliography \\textbfHoppe, F., Dessì, D., &amp; Sack, H. (2021). Deep Learning Meets Knowledge Graphs for Scholarly Data Classification. Companion Proceedings of the Web Conference 2021. Alam, M., Biswas, R., Chen, Y., Dessì, D., Gesese, G. A., \\textbfHoppe, F., &amp; Sack, H. (2021). HierClasSArt: Knowledge-Aware Hierarchical Classification of Scholarly Articles. Companion Proceedings of the Web Conference 2021. \\textbfHoppe, F., Tietz, T., Dessì, D., Meyer, N., Sprau, M., Alam, M., &amp; Sack, H. (2020). The Challenges of German Archival Document Categorization on Insufficient Labeled Data. Proceedings of the Third Workshop on Humanities in the Semantic Web (WHiSe 2020), Co-Located with 15th Extended Semantic Web Conference (ESWC 2020). Gesese, G. A., \\textbfHoppe, F., Alam, M., &amp; Sack, H. (2020). Leveraging Multilingual Descriptions for Link Prediction: Initial Experiments. Proceedings of the ISWC 2020 Demos and Industry Tracks: From Novel Ideas to Industrial Practice, Co-Located with 19th International Semantic Web Conference (ISWC 2020). \\textbfHoppe, F., Dessì, D., &amp; Sack, H. (2021). Understanding Class Representations: An Intrinsic Evaluation of Zero-Shot Text Classification. Workshop on Deep Learning for Knowledge Graphs (DL4KG @ ISWC2021). \\textbfHoppe, F. (2022). Improving Zero-Shot Text Classification with Graph-based Knowledge Representations. Proceedings of the Doctoral Consortium at ISWC 2022, Co-Located with 21st International Semantic Web Conference (ISWC 2022). Brate, R., Dang, M.-H., \\textbfHoppe, F., He, Y., Meroño-Peñuela, A., &amp; Sadashivaiah, V. (2022). Improving Language Model Predictions via Prompts Enriched with Knowledge Graphs. Workshop on Deep Learning for Knowledge Graphs (DL4KG @ ISWC2022)."
   },{
     "title"    : "Links"
     ,"category" : ""
     ,"tags"     : ""
     ,"url"      : "/tabs/links.html"
-    ,"date"     : "May 27, 2023"
+    ,"date"     : "May 30, 2023"
     ,"content"  : "main header Links test info Your Links page description. category title JekyII / Liquid type id_jekyiiliquid color gray title Web Design type id_webdesign color #F4A273 title Programming type id_programming color #62b462 list nil type id_programming title Stack OverFlow url https://stackoverflow.com/ info Stack Overflow is a question and answer website for professional and enthusiastic programmers. type id_jekyiiliquid title Jekyll url https://jekyllrb.com/ info Transform your plain text into static websites and blogs. type id_jekyiiliquid title Jekyll Cheat Sheet url https://cloudcannon.com/community/jekyll-cheat-sheet/ info There are so many Jekyll variables and filters to remember and it can be tricky to keep it all in your head. This cheat sheet serves as a quick reference of everything Jekyll can do. type id_jekyiiliquid title Liquid for Designers url https://github.com/Shopify/liquid/wiki/Liquid-for-Designers info Liquid for Designers wiki on GitHub. type id_jekyiiliquid title Liquid for Programmers url https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers info Liquid for Programmers wiki on GitHub. type id_jekyiiliquid title Liquid Reference url https://shopify.dev/api/liquid/ info Liquid is a template language created by Shopify and written in Ruby. It is now available as an open source project on GitHub. type id_webdesign title W3Schools url https://www.w3schools.com/ info W3Schools offers free online tutorials references and exercises in all the major languages of the web. Covering popular subjects like HTML CSS JavaScript Python SQL Java and many more."
   },{
     "title"    : "About"
     ,"category" : ""
     ,"tags"     : ""
     ,"url"      : "/"
-    ,"date"     : "May 27, 2023"
+    ,"date"     : "May 30, 2023"
     ,"content"  : "Currently looking for a PhD position in the field of neuro-symbolic AI. AI researcher Primary interests: AI Neuro-Symbolic AI"
   },{
     "title"    : "CV"
     ,"category" : ""
     ,"tags"     : ""
     ,"url"      : "/tabs/cv.html"
-    ,"date"     : "May 27, 2023"
+    ,"date"     : "May 30, 2023"
     ,"content"  : "main header Curriculum Vitae info I am a first stage researcher with experience working in an international heterogeneous interdisciplinary research group. I conducted independent research on Natural Language Understanding and managed research projects on research data management. My research areas include Knowledge Graphs and Machine Learning with a focus on Zero-Shot Learning. category title Work Experience type id_work color #cce6ff title Teaching type id_teaching color #cce6ff title Education type id_education color #cce6ff work_title Work Experience work_color #cce6ff work_list title Junior Researcher start_date 01.06.2019 end_date 31.03.2023 company FIZ - Karlsruhe description Research on Zero-Shot Text Classification using Knowledge Graphs as auxiliary information as well as development of ontologies and Knowledge Graphs for research data management. title Thesis Student (Master of Science) start_date 01.03.2018 end_date 30.09.2018 company Bosch Global Software Technologies Pvt. Ltd. description Exploration of features for recognition of near-duplicate reports based on distributional semantics and transfer learning. title Research Assistant start_date 01.08.2017 end_date 28.02.2018 company Fraunhofer Institute of Optronics System Technologies and Image Exploitation IOSB description Appending virtual reality scenes with foreground objects of an IP camera. title Thesis Student (Bachelor of Science) start_date 01.08.2016 end_date 28.02.2017 company Robert Bosch GmbH description Research on video based smoke detection for optical thin smoke. teaching_title Teaching teaching_color #cce6ff teaching_list title Information Service Engineering type lecture start_date 01.04.2020 end_date 31.08.2022 institute Karlsruhe Institute of Technology role Teaching Assistant description title Knowledge Graphs type mooc start_date end_date institute role Teaching Assistant description title Bachelor Thesis: type thesis start_date end_date institute role Thesis Supervisor description education_title Education education_color #cce6ff education_list title Master of Science (Computer Science) start_date 01.03.2017 end_date 31.10.2018 university University of Applied Sciences Karlsruhe description Overall mark: very good (1.2) with distinction Courses taken (among others): Pattern Recognition Unsupervised Learning Photogrammetry title Bachelor of Science (Computer Science) start_date 01.09.2013 end_date 28.02.2018 university University of Applied Sciences Karlsruhe description Overall mark: very good (1.2) with distinction Courses taken (among others): Computer Vision Embedded Systems Robotics skills_title Skills"
   }
   ]

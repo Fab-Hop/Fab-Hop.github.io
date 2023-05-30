@@ -53,8 +53,5 @@ xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>http://localhost:4000/tabs/publications.html</loc>
   </url>
-  <url>
-    <loc>http://localhost:4000/test.html</loc>
-  </url>
 </urlset>
 
