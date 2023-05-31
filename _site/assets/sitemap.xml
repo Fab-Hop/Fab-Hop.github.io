@@ -53,5 +53,26 @@ xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>http://localhost:4000/tabs/publications.html</loc>
   </url>
+  <url>
+    <loc>http://localhost:4000/bibliography/hoppe_deep_2021.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/bibliography/alam_hierclassart_2021.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/bibliography/hoppe_challenges_2020.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/bibliography/gesese_leveraging_2020.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/bibliography/hoppe_understanding_2021.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/bibliography/hoppe_improving_2022.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/bibliography/brate_improving_2022.html</loc>
+  </url>
 </urlset>
 

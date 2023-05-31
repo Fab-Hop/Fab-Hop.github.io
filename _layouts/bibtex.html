@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{%- include multi_lng/get-lng-by-url.liquid -%}
+{%- assign lng = get_lng -%}
+
+<div class="multipurpose-container paper-detail-heading-container">
+  <h1>{{ page.entry.title }}</h1>
+  <h2>{{ page.entry.booktitle }}</h2>
+  <h2>{{ page.entry.author }}</h2>
+  {% if page.entry.abstract %}
+    <p>{{ page.entry.abstract }}</p>
+  {% endif %}
+  <pre>{{ page.entry.bibtex }}</pre>
+</div>

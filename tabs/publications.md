@@ -34,7 +34,8 @@ image_lazy_loader_on: true
 #published: false
 ---
 # Summary
-Number of publications overall: {% bibliography_count --file my_publications %}
+Overall: {% bibliography_count --file my_publications %} publications
 
 # Conference Proceedings
-{% bibliography --file my_publications %}
+{% bibliography --file my_publications --template my_publication %}
+

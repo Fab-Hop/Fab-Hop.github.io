@@ -4,28 +4,28 @@
     ,"category" : ""
     ,"tags"     : ""
     ,"url"      : "/de/tabs/links.html"
-    ,"date"     : "30 Mai, 2023"
+    ,"date"     : "31 Mai, 2023"
     ,"content"  : "main header Links info Uma descrição para sua página de links. category title JekyII / Liquid type id_jekyiiliquid color gray title Web Design type id_webdesign color #F4A273 title Programação type id_programming color #62b462 list nil type id_programming title Stack OverFlow url https://stackoverflow.com/ info Stack Overflow é um site voltado para perguntas e respostas para professionais e entusiastas da programação. type id_jekyiiliquid title Jekyll url https://jekyllrb.com/ info Transforme o seu simples texto em websites estáticos e blogs. type id_jekyiiliquid title Tabela rápida para Jekyll url https://cloudcannon.com/community/jekyll-cheat-sheet/ info Existem tantos filtros e variáveis em Jekyll para se lembrar que pode ser difícil lembrar de todos. Essa tabela serve como uma rápida referência para tudo que Jekyll é capaz de fazer. type id_jekyiiliquid title Liquid para Designers url https://github.com/Shopify/liquid/wiki/Liquid-for-Designers info Wiki do Liquid para Designers no GitHub type id_jekyiiliquid title Liquid para Programadores url https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers info Wiki de Liquid para Programadores no GitHub type id_jekyiiliquid title Referências de Liquid url https://shopify.dev/api/liquid/ info Liquid é uma linguagem modelo create pelo Shopify e escrita em Ruby. Ela agora está disponível em código aberto no GitHub. type id_webdesign title W3Schools url https://www.w3schools.com/ info W3Schools oferece tutoriais gratuitos referências e exercícios nas linguagens mais importantes da web cobrindo a mais populares como HTML CSS JavaScript Python SQL Java e mutio mais."
   },{
     "title"    : "Wiklkommen"
     ,"category" : ""
     ,"tags"     : ""
     ,"url"      : "/de/"
-    ,"date"     : "30 Mai, 2023"
+    ,"date"     : "31 Mai, 2023"
     ,"content"  : "Olá Amostra Amostra Amostra Amostra Amostra"
   },{
     "title"    : "Amostra"
     ,"category" : ""
     ,"tags"     : ""
     ,"url"      : "/de/tabs/cv.html"
-    ,"date"     : "30 Mai, 2023"
+    ,"date"     : "31 Mai, 2023"
     ,"content"  : "main header Curriculum Vitae info Test category title Work Experience type id_work color #cce6ff title Teaching type id_teaching color #cce6ff title Education type id_education color #cce6ff work_title Work Experience work_color #cce6ff work_list title Junior Researcher start_date 01.06.2019 end_date 01.03.2023 company FIZ - Karlsruhe description Research on Zero-Shot Text Classification using Knowledge Graphs as auxiliary information as well as development of ontologies and Knowledge Graphs for research data management. title Thesis Student (Master of Science) start_date end_date company description title Research Assistant start_date end_date company description title Thesis Student (Bachelor of Science) start_date end_date company description teaching_title Teaching teaching_color #cce6ff teaching_list title education_title Education education_color #cce6ff education_list title Master of Science (Computer Science) start_date end_date university University of Applied Sciences Karlsruhe description title Bachelor of Science (Computer Science) start_date end_date university University of Applied Sciences Karlsruhe description"
   },{
     "title"    : "Über mich"
     ,"category" : ""
     ,"tags"     : ""
     ,"url"      : "/de/tabs/about.html"
-    ,"date"     : "30 Mai, 2023"
+    ,"date"     : "31 Mai, 2023"
     ,"content"  : "Olá Amostra Amostra Amostra Amostra Amostra"
   }
   ]

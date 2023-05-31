@@ -71,6 +71,19 @@ whitelist:
   - jekyll-redirect-from
   - jekyll-scholar
 
+
+###########################################################
+# jekyll-scholar (https://github.com/inukshuk/jekyll-scholar)
+###########################################################
+scholar:
+  style: "apa"
+  locale: "en"
+  source: "./_bibliography"
+  bibliography: "my_publications.bib"
+  allow_locale_overides: true
+  details_layout: "bibtex.html"
+  
+
 ###########################################################
 # jekyll-paginate (https://jekyllrb.com/docs/pagination/)
 ###########################################################
