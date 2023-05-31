@@ -46,14 +46,10 @@ meta_common_description: ""
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:
-  - github: "Fab-Hop"
   - linkedin: "in/fab-hop"
+  - github: "Fab-Hop"
   - mastodon: "@fab"
   - orcid: "0000-0002-7047-2770"
-  - dblp: "pid/277/0492.html"
-  - googlescholar: "citations?user=8N_u7TcAAAAJ"
-# to add more, check the _data/const/contact.yml file
-#  - your_new_contact: ""
 
 # if no id is provided, this feature will be disabled.
 # make sure your environment does not match with google.analytics.ignore in _data/conf/main.yml

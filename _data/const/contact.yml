@@ -23,11 +23,5 @@ mastodon:
   icon: "/assets/img/default/mastodon.svg"
   url: "https://mathstodon.xyz"
 orcid:
-  icon: "fa fa-graduation-cap"
+  icon: "/assets/img/default/orcid.svg"
   url: "https://orcid.org/"
-googlescholar:
-  icon: "fa fa-graduation-cap"
-  url: "https://scholar.google.com/"
-dblp: 
-  icon: "fa fa-graduation-cap"
-  url: "https://dblp.uni-trier.de/"
