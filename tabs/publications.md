@@ -32,10 +32,14 @@ image_lazy_loader_on: true
 #search_engine_exclude: true
 # to disable this page, simply set published: false or delete this file
 #published: false
----
-# Summary
-Overall: {% bibliography_count --file my_publications %} publications
 
+img: ":publication-heading.jpg"
+page_data:
+  main:
+    header: "Publications"
+
+
+---
 # Conference Proceedings
 {% bibliography --file my_publications --template my_publication %}
 

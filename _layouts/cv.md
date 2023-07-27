@@ -20,14 +20,15 @@ layout: default
 
 <div class="multipurpose-container cv-heading-container">
   <div class="home-heading" {{ home_img_background_style}}>
-  {{ home_img_tag }}
+  {{ cv_data.img }}
   </div>
   <h1>{{ cv_data.main.header | default: "CV" }}</h1>
   <p>{{ cv_data.main.info | default: "No data, check page_data in [language]/tabs/cv.md front matter or _data/content/cv/[language].yml" }}</p>
+  <hr/>
   <div class="multipurpose-button-wrapper">
-    <a href="#work" role="button" class="multipurpose-button link-buttons" style="background-color:{{ cv_data.work_color }};">{{ cv_data.work_title }}</a>
-    <a href="#teaching" role="button" class="multipurpose-button link-buttons" style="background-color:{{ cv_data.teaching_color }};">{{ cv_data.teaching_title }}</a>
-    <a href="#education" role="button" class="multipurpose-button link-buttons" style="background-color:{{ cv_data.education_color }};">{{ cv_data.education_title }}</a>
+    <a href="#work" role="button" class="multipurpose-button link-buttons">{{ cv_data.work_title }}</a>
+    <a href="#teaching" role="button" class="multipurpose-button link-buttons">{{ cv_data.teaching_title }}</a>
+    <a href="#education" role="button" class="multipurpose-button link-buttons">{{ cv_data.education_title }}</a>
   </div>
 </div>
 
@@ -45,10 +46,10 @@ layout: default
     <tbody>
       {%- for list in cv_data.work_list %}
         <tr >
-          <td rowspan="2" style='vertical-align:middle'>
+          <td rowspan="2" style="vertical-align:middle;">
             <p>{{list.start_date}}</p>
           </td>
-          <td rowspan="2" style='vertical-align:middle'>
+          <td rowspan="2" style="vertical-align:middle;">
             <p>{{list.end_date}}</p>
           </td>
           <td>
@@ -70,39 +71,42 @@ layout: default
 
 <div class="multipurpose-container cv-container" id="teaching" style="border-left-color:{{ cv_data.teaching_color }};">
   <h2>{{ cv_data.teaching_title}}</h2>
-  <table class="table {{ hover_class }}">
-    <thead>
-      <tr>
-        <th>{{ site.data.lang[lng].cv.start_text}}</th>
-        <th>{{ site.data.lang[lng].cv.end_text}}</th>
-        <th>{{ site.data.lang[lng].cv.job_text }}</th>
-        <th>{{ site.data.lang[lng].cv.university_text }}</th>
-      </tr>
-    </thead>
-    <tbody>
-      {%- for list in cv_data.teaching_list %}
-        <tr >
-          <td rowspan="2">
-            <p>{{list.start_date}}</p>
-          </td>
-          <td rowspan="2">
-            <p>{{list.end_date}}</p>
-          </td>
-          <td>
-            <p><b>{{list.title}}</b></p>
-          </td>
-          <td>
-            <p>{{ list.institute }}</p>
-          </td>
-        </tr>
+  {%- for list in cv_data.teaching_list %}
+    <h3>{{ list.role }}</h3>
+    <table class="table {{ hover_class }}">
+      <thead>
         <tr>
-          <td colspan="2">
-            <p>{{ list.description }}</p>
-          </td>
+          <th>{{ site.data.lang[lng].cv.start_text}}</th>
+          <th>{{ site.data.lang[lng].cv.end_text}}</th>
+          <th>{{ site.data.lang[lng].cv.lecture_text }}</th>
+          <th>{{ site.data.lang[lng].cv.institute_text }}</th>
         </tr>
-      {%- endfor %}
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        {%- for role_list in list.role_list %}
+          <tr>
+            <td rowspan="2" style="vertical-align:middle;">
+              <p>{{role_list.start_date}}</p>
+            </td>
+            <td rowspan="2" style="vertical-align:middle;">
+              <p>{{role_list.end_date}}</p>
+            </td>
+            <td>
+              <p><b>{{role_list.title}}</b></p>
+            </td>
+            <td>
+              <p>{{ role_list.institute }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>{{ role_list.description }}</p>
+            </td>
+          </tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  {%- endfor %}
 </div>
 
 <div class="multipurpose-container cv-container" id="education" style="border-left-color:{{ cv_data.education_color }};">
@@ -126,7 +130,7 @@ layout: default
             <p>{{list.end_date}}</p>
           </td>
           <td>
-            <p><b>{{list.title}}</b></p>
+            <p><b>{{list.title}}</b><br/>({{list.subject}})</p>
           </td>
           <td>
             <p>{{ list.university }}</p>
@@ -134,13 +138,10 @@ layout: default
         </tr>
         <tr>
           <td colspan="2">
-            <p>{{ list.description }}</p>
+            <p>{{list.grade}}<br/>{{list.description }}</p>
           </td>
         </tr>
       {%- endfor %}
     </tbody>
   </table>
-</div>
-<div class="multipurpose-container cv-container" id="skill" style="border-left-color:{{ cv_data.education_color }};">
-  <h2>{{ cv_data.skills_title}}</h2>
 </div>

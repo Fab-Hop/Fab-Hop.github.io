@@ -51,6 +51,21 @@ contacts:
   - mastodon: "@fab"
   - orcid: "0000-0002-7047-2770"
 
+detailed_contacts:
+  - linkedin: "in/fab-hop"
+  - github: "Fab-Hop"
+  - mastodon: "@fab2"
+  - orcid: "0000-0002-7047-2770"
+
+scholar:
+  - google: "8N_u7TcAAAAJ"
+  - zotero: "fab_hop"
+  - orcid: "0000-0002-7047-2770"
+  - dblp: "277/0492.html"
+  - researchgate: "Fabian-Hoppe-2"
+  - semanticscholar: "Fabian-Hoppe/2069898323"
+  - scopus: "57219900264"
+
 # if no id is provided, this feature will be disabled.
 # make sure your environment does not match with google.analytics.ignore in _data/conf/main.yml
 google_analytics_id: ""

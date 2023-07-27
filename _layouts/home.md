@@ -45,7 +45,7 @@ layout: default
           </p>
         {% endif -%}
         {%- if site.data.conf.others.about.show_contacts and site.data.owner[lng].contacts.size > 0 %}
-          {% include default/nav/contact-links.html -%}
+          {% include default/detailed-contact-links.html -%}
         {% endif -%}
       </div>
     </div>

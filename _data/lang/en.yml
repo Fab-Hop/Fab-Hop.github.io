@@ -34,6 +34,7 @@ no_translation_tooltip: No Translation
 
 navigation:
   contact_header: Contact
+  scholar_header: Links
 
 color_scheme_switch_tooltip: Color scheme
 
@@ -144,7 +145,9 @@ cv:
   button_name: CV
   job_text: Position
   company_text: Company
+  lecture_text: Course
   university_text: University
+  institute_text: Institute
   degree_text: Degree
   start_text: Start
   end_text: End

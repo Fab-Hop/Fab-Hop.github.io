@@ -1,0 +1,37 @@
+# Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
+# Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
+# Licensed under MIT
+
+# The contact account constants
+# for icons please check this page https://fontawesome.com/v4.7/icons/
+#   ex:   icon: "fa fa-github"
+# you can also add svg or png images as icons (local (starts with '/') or http:// or https://)
+#   ex:   icon: "/assets/img/default/sample.svg"
+#         icon: "https://www.example.com/sample.svg"
+#   * only black colored and transparent backgrounded svg or png images are supported.
+#   * the image should be square
+# keys need to match with accounts in _data/owner/[language].yml file
+
+google:
+  icon: "fa fa-github"
+  url: "https://scholar.google.com/citations?user="
+zotero:
+  icon: "fa fa-linkedin"
+  url: "https://www.zotero.org/"
+orcid:
+  icon: "/assets/img/default/orcid.svg"
+  url: "https://orcid.org/"
+dblp:
+  icon: ""
+  url: "https://dblp.uni-trier.de/pid/"
+researchgate:
+  icon: ""
+  url: "https://www.researchgate.net/profile/"
+semanticschoar:
+  icon: ""
+  url: "https://www.semanticscholar.org/author/"
+scopus:
+  icon: ""
+  url: "https://www.scopus.com/authid/detail.uri?authorId="
+
+

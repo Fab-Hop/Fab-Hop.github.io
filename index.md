@@ -36,10 +36,13 @@ img: ":home-heading.jpg"
 # don't forget that this is root index.html. If you disable this, there will be no index.html page to open
 #published: false
 ---
-Currently looking for a PhD position in the field of neuro-symbolic AI.
-# AI researcher
+I am a PhD student. I research in Artificial Intelligence about the combination of Large Language Models and Knowledge Graphs.
 
-**Primary interests:** 
-* AI
-* Neuro-Symbolic AI
+<hr/>
+
+# Primary interests: 
+* **AI**
+* **Neuro-Symbolic AI**
+* **Large Language Models**
+* **Knowledge Graphs**
 
