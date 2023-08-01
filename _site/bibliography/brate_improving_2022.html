@@ -62,7 +62,7 @@
     ,"description": ""
     ,"publisher": {"@id": "http://localhost:4000/#person"}
     ,"inLanguage": "en-US"
-    ,"sameAs": ["https://www.linkedin.com//in/fab-hop","https://github.com/Fab-Hop","https://mathstodon.xyz/@fab","https://orcid.org//0000-0002-7047-2770"]
+    ,"sameAs": ["https://mathstodon.xyz//@fab"]
     ,"copyrightHolder" : {"@id": "http://localhost:4000/#person"}
     ,"copyrightYear" : "2023"
   },{
@@ -100,10 +100,11 @@
 }</script>
 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"/>
 
-<link href="/assets/css/main.css" rel="stylesheet"><link href="/assets/css/nav-media.css" rel="stylesheet">
+<link href="/assets/css/main.css" rel="stylesheet"/><link href="/assets/css/nav-media.css" rel="stylesheet"/>
 
   </head>
 
@@ -135,12 +136,6 @@
         <a href="/" translate="no">Fabian Hoppe</a>
         </div>
       <p>&nbsp;Researcher</p>
-      <br>
-        
-
-<div class="lang-switch">
-  <p>[&nbsp;</p><p>lang count (0) and file count (0) don't match or file count is 0&nbsp;</p><p>]</p>
-</div>
     </div>
     <br>
     <a href="javascript:void(0);" class="side-nav-close">
@@ -150,21 +145,24 @@
     <br>
     <div class="side-nav-buttons">
       <ul class="nav nav-pills nav-stacked">
-        <li ><a href="/" class=" hover-effect"><i class="fa-fw fa fa-home" aria-hidden="true"></i>About</a></li><li ><a href="/tabs/cv.html" class=" hover-effect"><i class="fa-fw fa fa-user-o" aria-hidden="true"></i>CV</a></li><li ><a href="/tabs/publications.html" class=" hover-effect"><i class="fa-fw fa  fa-graduation-cap" aria-hidden="true"></i>Publications</a></li><li ><a href="/tabs/blog/" class=" hover-effect"><i class="fa-fw fa fa-pencil-square-o" aria-hidden="true"></i>Blog</a></li><li ><a href="/tabs/imprint.html" class=" hover-effect"><i class="fa-fw fa fa-info-circle" aria-hidden="true"></i>Imprint</a></li></ul>
+        <li ><a href="/" class=" hover-effect"><i class="fa-fw fa fa-home" aria-hidden="true"></i>About</a></li><li ><a href="/cv.html" class=" hover-effect"><i class="fa-fw fa fa-user-o" aria-hidden="true"></i>CV</a></li><li ><a href="/publications.html" class=" hover-effect"><i class="fa-fw fa  fa-graduation-cap" aria-hidden="true"></i>Publications</a></li><li ><a href="/blog/" class=" hover-effect"><i class="fa-fw fa fa-pencil-square-o" aria-hidden="true"></i>Blog</a></li><li ><a href="/imprint.html" class=" hover-effect"><i class="fa-fw fa fa-info-circle" aria-hidden="true"></i>Imprint</a></li></ul>
     </div>
-    <br>
     <br><div class="contact-container">
   <hr/>
   <h3>Contact</h3>
-  <ul><li><a href="https://www.linkedin.com//in/fab-hop" class="hover-effect-big" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li><li><a href="https://github.com/Fab-Hop" class="hover-effect-big" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></li><li><a href="https://mathstodon.xyz/@fab" class="hover-effect-big" target="_blank" rel="noopener noreferrer"><img src="/assets/img/default/mastodon.svg" /></a></li><li><a href="https://orcid.org//0000-0002-7047-2770" class="hover-effect-big" target="_blank" rel="noopener noreferrer"><img src="/assets/img/default/orcid.svg" /></a></li></ul>
+  <ul><li>
+      <a href="javascript:void(0);" class="hover-effect-big" onclick="setAddress('info', 'fhoppe.com');"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li><li><a href="https://mathstodon.xyz//@fab" class="hover-effect-big" target="_blank" rel="noopener noreferrer"><img src="/assets/img/default/mastodon.svg" /></a></li></ul>
 </div>
 
-    <hr id="toc-view-top">
-    <div class="side-nav-footer" translate="no">
-        <p>&copy; 2023 Fabian Hoppe.</p>
-      </div>
-  </div>
+    </div>
   <div class="side-nav-bottom-buttons-container">
+    <div >
+        
+
+<div class="lang-switch">
+  <p>[&nbsp;</p><p>lang count (0) and file count (0) don't match or file count is 0&nbsp;</p><p>]</p>
+</div>
+    </div>
     <hr>
     <ul>
       <li><div class="color_scheme_switch_side_holder" data-toggle="tooltip" data-placement="top" title="Color scheme">
@@ -180,6 +178,8 @@
   <h1>Improving Language Model Predictions via Prompts Enriched with Knowledge Graphs</h1>
   <h2>Workshop on Deep Learning for Knowledge Graphs (DL4KG @ ISWC2022)</h2>
   <h2>Brate, Ryan and Dang, Minh-Hoang and Hoppe, Fabian and He, Yuan and Meroño-Peñuela, Albert and Sadashivaiah, Vijay</h2>
+  
+    <p>Despite advances in deep learning and knowledge graphs (KGs), using language models for natural language understanding and question answering remains a challenging task. Pre-trained language models (PLMs) have shown to be able to leverage contextual information, to complete cloze prompts, next sentence completion and question answering tasks in various domains. Unlike structured data querying in e.g. KGs, mapping an input question to data that may or may not be stored by the language model is not a simple task. Recent studies have highlighted the improvements that can be made to the quality of information retrieved from PLMs by adding auxiliary data to otherwise naive prompts. In this paper, we explore the effects of enriching prompts with additional contextual information leveraged from the Wikidata KG on language model performance. Specifically, we compare the performance of naive vs. KG-engineered cloze prompts for entity genre classification in the movie domain. Selecting a broad range of commonly available Wikidata properties, we show that enrichment of cloze-style prompts with Wikidata information can result in a significantly higher recall for the investigated BERT and RoBERTa large PLMs. However, it is also apparent that the optimum level of data enrichment differs between models. </p>
   
   <pre>@inproceedings{brate_improving_2022,
   title = {Improving {Language} {Model} {Predictions} via {Prompts} {Enriched} with {Knowledge} {Graphs}},

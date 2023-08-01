@@ -13,25 +13,25 @@
 # keys need to match with accounts in _data/owner/[language].yml file
 
 google:
-  icon: "fa fa-github"
+  icon: "ai ai-google-scholar"
   url: "https://scholar.google.com/citations?user="
 zotero:
-  icon: "fa fa-linkedin"
+  icon: "ai ai-zotero"
   url: "https://www.zotero.org/"
 orcid:
-  icon: "/assets/img/default/orcid.svg"
+  icon: "ai ai-orcid"
   url: "https://orcid.org/"
 dblp:
-  icon: ""
+  icon: "ai ai-dblp"
   url: "https://dblp.uni-trier.de/pid/"
 researchgate:
-  icon: ""
+  icon: "ai ai-researchgate"
   url: "https://www.researchgate.net/profile/"
-semanticschoar:
-  icon: ""
+semanticscholar:
+  icon: "ai ai-semantic-scholar"
   url: "https://www.semanticscholar.org/author/"
 scopus:
-  icon: ""
+  icon: "ai ai-scopus"
   url: "https://www.scopus.com/authid/detail.uri?authorId="
 
 

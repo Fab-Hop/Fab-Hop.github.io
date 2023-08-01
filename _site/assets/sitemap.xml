@@ -6,28 +6,39 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 xmlns:xhtml="http://www.w3.org/1999/xhtml"
 xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>http://localhost:4000/de/tabs/about.html</loc>
+    <loc>http://localhost:4000/de/2021-08-10-Test-page1</loc>
+    <image:image>
+      <image:loc>http://localhost:4000/assets/img/posts/post_pic1.jpg</image:loc>
+      <image:title>First Post</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>http://localhost:4000/de/tabs/archive.html</loc>
+    <loc>http://localhost:4000/posts/2021-08-10-Test-page1</loc>
+    <image:image>
+      <image:loc>http://localhost:4000/assets/img/posts/post_pic1.jpg</image:loc>
+      <image:title>First Post</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>http://localhost:4000/tabs/archive.html</loc>
+    <loc>http://localhost:4000/archive.html</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/de/tabs/cv.html</loc>
+    <loc>http://localhost:4000/de/cv.html</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/tabs/cv.html</loc>
+    <loc>http://localhost:4000/cv.html</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/tabs/imprint.html</loc>
+    <loc>http://localhost:4000/de/imprint.html</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/de/tabs/blog/</loc>
+    <loc>http://localhost:4000/imprint.html</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/tabs/blog/</loc>
+    <loc>http://localhost:4000/blog/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/de/blog/</loc>
   </url>
   <url>
     <loc>http://localhost:4000/de/</loc>
@@ -36,22 +47,19 @@ xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
     <loc>http://localhost:4000/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/de/tabs/links.html</loc>
+    <loc>http://localhost:4000/links.html</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/tabs/links.html</loc>
+    <loc>http://localhost:4000/de/publications.html</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/de/tabs/projects.html</loc>
+    <loc>http://localhost:4000/publications.html</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/tabs/projects.html</loc>
+    <loc>http://localhost:4000/bibliography/hoppe_improving_2022.html</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/de/tabs/publications.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:4000/tabs/publications.html</loc>
+    <loc>http://localhost:4000/bibliography/brate_improving_2022.html</loc>
   </url>
   <url>
     <loc>http://localhost:4000/bibliography/hoppe_deep_2021.html</loc>
@@ -60,19 +68,13 @@ xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
     <loc>http://localhost:4000/bibliography/alam_hierclassart_2021.html</loc>
   </url>
   <url>
+    <loc>http://localhost:4000/bibliography/hoppe_understanding_2021.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:4000/bibliography/hoppe_challenges_2020.html</loc>
   </url>
   <url>
     <loc>http://localhost:4000/bibliography/gesese_leveraging_2020.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:4000/bibliography/hoppe_understanding_2021.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:4000/bibliography/hoppe_improving_2022.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:4000/bibliography/brate_improving_2022.html</loc>
   </url>
 </urlset>
 

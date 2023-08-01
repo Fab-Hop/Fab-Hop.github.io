@@ -255,7 +255,13 @@
 })();
 
 
+ 
 
+function setAddress(name, host) {
+  window.location.href = 'mailto:'+ name + '@'+ host;
+}
+
+    
 
 
    
@@ -545,36 +551,167 @@
 })();
 
 
+ 
+
+ 
+function copyToClipboard(text, success_msg) {
+  let tooltipElm = '#copytoclipboard';
+  if (!text || text.length === 0) return;
 
    
+  if (typeof (navigator.clipboard) != 'undefined') {
+    navigator.clipboard.writeText(text).then(function () {
+      showToolTip(tooltipElm, success_msg);
+    }, function (err) {
+      showToolTip(tooltipElm, 'Copy Error!');
+    });
+  } else {
+     
+    const $obj = $("<input>");
+    $("body").append($obj);
+    $obj.val(text).select();
+    document.execCommand("copy");
+    $obj.remove();
+    showToolTip(tooltipElm, success_msg);
+  }
+}
+ 
+
+(function () {
+  'use strict';
+
+  let panelSelector = '.movable';
+  let panelHeaderSelector = '.panel-heading';
+
+  function mouseEventInit(panel, header) {
+    if (panel == null || header == null) return;
+    let currentX = 0, currentY = 0;
+
+    function mouseDownEvent(e) {
+      e.preventDefault();
+      currentX = e.offsetX;
+      currentY = e.offsetY;
+      document.onmouseup = mouseUpEvent;
+      document.onmousemove = mouseMoveEvent;
+    }
+
+    function mouseMoveEvent(e) {
+      e.preventDefault();
+      let limitX = e.clientX - currentX;
+      let limitY = e.clientY - currentY;
+
+      if (limitX < 0) limitX = 0;
+      if (limitY < 0) limitY = 0;
+      if (panel.offsetWidth > window.innerWidth - e.clientX + currentX) {
+        limitX = window.innerWidth - panel.offsetWidth;
+      }
+      let headerOffset = panel.offsetHeight - header.offsetHeight;
+      if (panel.offsetHeight > window.innerHeight - e.clientY + currentY + headerOffset) {
+        limitY = window.innerHeight - panel.offsetHeight + headerOffset;
+      }
+
+      panel.style.left = limitX + "px";
+      panel.style.top = limitY + "px";
+    }
+
+    function mouseUpEvent(e) {
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+
+    header.onmousedown = mouseDownEvent;
+  }
+
+  function touchEventToMouseEvent(event) {
+    let touch = event.changedTouches[0];
+    touch.target.dispatchEvent(
+      new MouseEvent({
+        touchstart: "mousedown",
+        touchmove: "mousemove",
+        touchend: "mouseup"
+      }[event.type], {
+        bubbles: true, cancelable: true, view: window, detail: 1,
+        screenX: touch.screenX, screenY: touch.screenY, clientX: touch.clientX, clientY: touch.clientY,
+        ctrlKey: false, altKey: false, shiftKey: false, metaKey: false, button: 0, relatedTarget: null
+      })
+    );
+  }
+
+  function touchEventToMouseEventInit(panel) {
+    if (panel == null) return;
+    panel.addEventListener("touchstart", touchEventToMouseEvent);
+    panel.addEventListener("touchmove", touchEventToMouseEvent);
+    panel.addEventListener("touchend", touchEventToMouseEvent);
+    panel.addEventListener("touchcancel", touchEventToMouseEvent);
+  }
+
+  function movablePanelsInit() {
+     
+    let panel_list = document.querySelectorAll(panelSelector);
+    if (panel_list == null || panel_list == "undefined") return;
+
+    panel_list.forEach(function (panel) {
+       
+      panel.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+      });
+
+       
+      touchEventToMouseEventInit(panel);
+
+       
+      mouseEventInit(panel, panel.querySelector(panelHeaderSelector));
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", movablePanelsInit);
+
+})();
+ 
 
 (function () {
   'use strict';
 
   $(function () {
-    let readMoreLess = $(".read-more-less");
+    let tocContainer = $("#toc-container");
 
-    if (readMoreLess.length > 0) {
-      readMoreLess.click(function () {
-        let element = $(this).parent().parent().parent().find('.markdown-style');
+    if (tocContainer.length > 0) {
+      function InitToc() {
+         
+        if (typeof Toc === "undefined") return false;
 
-        let read_more = $(this).parent().parent().parent().find('.read-more-less').children('.read-more');
-        let read_less = $(this).parent().parent().parent().find('.read-more-less').children('.read-less');
+        const tocNavSelector = '#table-of-contents';
+        const tocOutputTarget = $(tocNavSelector);
+        const tocInputSource = $(".main-container");
 
-        if (element.css('display') == 'none') {
-          read_more.hide();
-          read_less.show();
-        } else {
-          read_more.show();
-          read_less.hide();
+         
+        if (Toc.helpers.getTopLevel(tocInputSource) <= 1) return false;
+        Toc.init({
+          $nav: tocOutputTarget
+          , $scope: tocInputSource
+        });
+        $('body').scrollspy({
+          target: tocNavSelector
+        });
+
+         
+        let tocViewId = $("#toc-view-top");
+        if (tocViewId.length > 0) {
+           
+          let tocViewIdBottom = (tocViewId.offset().top - $(window).scrollTop()) + tocViewId.outerHeight();
+           
+          tocContainer.css({ top: tocViewIdBottom + 'px' });
         }
-        element.slideToggle();
-      });
+        return true;
+      }
+
+      let ret = InitToc();
+       
+      if (ret == false) tocContainer.hide();
     }
   });
 
 })();
-
 
   
      

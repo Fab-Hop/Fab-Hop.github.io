@@ -26,6 +26,13 @@ layout: default
     <div class="meta-container">
       {% include default/scholar-links.html -%}
     </div>
+    <hr/>
+    <ul>
+      <li>Overall publications: {% bibliography_count --file my_publications %}</li>
+      <li>Publications in conference proceedings: {% bibliography_count --file my_publications --query @inproceedings %}</li>
+      <li>Publications in journals: {% bibliography_count --file my_publications --query @article %}</li>
+    </ul>
+
   </div>
 </div>
 

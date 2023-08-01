@@ -1,25 +1,16 @@
 ###########################################################
 # Owner's Personal Information
 ###########################################################
-# This is your brand name
+
 brand: "Fabian Hoppe"
-
-# text below the brand name
 brand_sub_text: "Researcher"
-
-# used for seo meta post author (if it's not defined in post)
 name: "Fabian Hoppe"
 
 # home page top header texts
 home:
-  # you can also use $site_brand, $site_greetings, $site_welcome in line1 and line2 for replacing texts.
-  top_header_line1: "$site_brand"
+  top_header_line1: "$site_welcome"
+  top_header_line2: "$site_brand"
 
-# about page sub title
-about:
-  sub_title: "$site_sample"
-
-# if you don't want to add copyright year, comment or leave it blank.
 # the year during which the claimed copyright for the work was first asserted.
 copyright_start_year: "2023"
 
@@ -42,44 +33,26 @@ creative_commons:
 # if it has no content, this will be used for page description. It is also used in manifest.json
 meta_common_description: ""
 
-# contact options (side nav bottom and about page)
+# contact options 
 # the order of the items will be shown as here.
-# comment to remove any contact item
 contacts:
-  - linkedin: "in/fab-hop"
-  - github: "Fab-Hop"
+  - email: "info@fhoppe.com" 
   - mastodon: "@fab"
-  - orcid: "0000-0002-7047-2770"
 
 detailed_contacts:
-  - linkedin: "in/fab-hop"
+  - email: "info@fhoppe.com" 
+  - mastodon: "@fab"
   - github: "Fab-Hop"
-  - mastodon: "@fab2"
+  - linkedin: "in/fab-hop"
   - orcid: "0000-0002-7047-2770"
 
+# scholar links 
+# the order of the items will be shown as here.
 scholar:
   - google: "8N_u7TcAAAAJ"
-  - zotero: "fab_hop"
-  - orcid: "0000-0002-7047-2770"
   - dblp: "277/0492.html"
-  - researchgate: "Fabian-Hoppe-2"
   - semanticscholar: "Fabian-Hoppe/2069898323"
   - scopus: "57219900264"
-
-# if no id is provided, this feature will be disabled.
-# make sure your environment does not match with google.analytics.ignore in _data/conf/main.yml
-google_analytics_id: ""
-
-# there are different ways to verify web page. One is adding this as meta into html.
-# make sure you set meta.google_site_verify: true in _data/conf/main.yml
-# make sure your environment does not match with google.site_verification.ignore in _data/conf/main.yml
-google_site_verification: ""
-
-# make sure you set contact_form.enable: true in _data/conf/main.yml
-# - Create a form in Google Forms. You can use the template named "Contact Information".
-# - Customize the form colors and response validation according to your needs.
-# - To disable forced Google sign-in, go to "Settings > Response" and switch off the "Limit to 1 response".
-# - Click the "Send" button at the top right.
-# - Click the link icon from "Send via" list and copy the link.
-# - Then paste the link between double quotes.
-google_forms_contact_form_url: ""
+  - orcid: "0000-0002-7047-2770"
+  - researchgate: "Fabian-Hoppe-2"
+  - zotero: "fab_hop"

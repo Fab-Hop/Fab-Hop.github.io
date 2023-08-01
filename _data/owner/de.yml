@@ -1,27 +1,16 @@
 ###########################################################
 # Owner's Personal Information
 ###########################################################
-# This is your brand name
+
 brand: "Fabian Hoppe"
-
-# text below the brand name
-brand_sub_text: "$site_sample"
-
-# used for seo meta post author (if it's not defined in post)
+brand_sub_text: "Wissenschaftler"
 name: "Fabian Hoppe"
 
 # home page top header texts
 home:
-  # you can also use $site_brand, $site_greetings, $site_welcome in line1 and line2 for replacing texts.
   top_header_line1: "$site_welcome"
-  # if commented, top header will be a single line
   top_header_line2: "$site_brand"
 
-# about page sub title
-about:
-  sub_title: "$site_sample"
-
-# if you don't want to add copyright year, comment or leave it blank.
 # the year during which the claimed copyright for the work was first asserted.
 copyright_start_year: "2023"
 
@@ -44,11 +33,26 @@ creative_commons:
 # if it has no content, this will be used for page description. It is also used in manifest.json
 meta_common_description: ""
 
-# contact options (side nav bottom and about page)
+# contact options 
 # the order of the items will be shown as here.
-# comment to remove any contact item
 contacts:
-  - linkedin: "in/fab-hop"
-  - github: "Fab-Hop"
+  - email: "info@fhoppe.com" 
   - mastodon: "@fab"
+
+detailed_contacts:
+  - email: "info@fhoppe.com" 
+  - mastodon: "@fab"
+  - github: "Fab-Hop"
+  - linkedin: "in/fab-hop"
   - orcid: "0000-0002-7047-2770"
+
+# scholar links 
+# the order of the items will be shown as here.
+scholar:
+  - google: "8N_u7TcAAAAJ"
+  - dblp: "277/0492.html"
+  - semanticscholar: "Fabian-Hoppe/2069898323"
+  - scopus: "57219900264"
+  - orcid: "0000-0002-7047-2770"
+  - researchgate: "Fabian-Hoppe-2"
+  - zotero: "fab_hop"

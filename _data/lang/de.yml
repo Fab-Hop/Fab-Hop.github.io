@@ -29,9 +29,8 @@ date:
 not_found:
   header: Seite nicht gefunden.
   line1: Die gewünschte Seite konnte leider nicht gefunden werden.
-  line2: Versuchen Sie es, wenn möglich, über das Menü.
 
-no_translation_tooltip: No Translation
+no_translation_tooltip: Keine Übersetzung vorhanden
 
 navigation:
   contact_header: Kontakt
@@ -46,17 +45,17 @@ image_viewer:
   load_error: Dieses Bild konnte nicht geladen werden.
 
 copyright:
-  additional_text: " Alle Rechte vorbehalten."
+  additional_text: "Alle Rechte vorbehalten."
 
 creative_commons:
-  some_rights_reserved: .
+  some_rights_reserved: Einige Rechte vorbehalten.
   # check _data/owner/[language].yml for license type.
-  by: Salvo previamente expresso, o conteúdo desse site usa a licença Creative Commons Attribution 4.0 International.
-  by-nd: Salvo previamente expresso, o conteúdo desse site usa a licença Creative Commons Attribution-NoDerivatives 4.0 International.
-  by-sa: Salvo previamente expresso, o conteúdo desse site usa a licença Creative Commons Attribution-ShareAlike 4.0 International.
-  by-nc: Salvo previamente expresso, o conteúdo desse site usa a licença Creative Commons Attribution-NonCommercial 4.0 International.
-  by-nc-nd: Salvo previamente expresso, o conteúdo desse site usa a licença Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International.
-  by-nc-sa: Salvo previamente expresso, o conteúdo desse site usa a licença Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
+  by: Except where otherwise noted, content on this web site is licensed under a Creative Commons Attribution 4.0 International License.
+  by-nd: Except where otherwise noted, content on this web site is licensed under a Creative Commons Attribution-NoDerivatives 4.0 International License.
+  by-sa: Except where otherwise noted, content on this web site is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+  by-nc: Except where otherwise noted, content on this web site is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+  by-nc-nd: Except where otherwise noted, content on this web site is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+  by-nc-sa: Except where otherwise noted, content on this web site is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 
 # for 404 layout
 not-found:
@@ -66,7 +65,7 @@ not-found:
 post:
   read_time:
     unit: " min"
-    text: " leitura"
+    text: " read"
     # c for char w for word
     word_char: w
     # char or words per minute
@@ -77,10 +76,10 @@ post:
     first_post: Zuerst
     last_post: Zuletzt
   table_of_contents:
-    heading: Conteúdo
+    heading: Inhaltsverzeichnis
     tooltip:
-      move: Arraste para mover
-      close: Fechar
+      move: Drag to move
+      close: Close
   share:
     heading: Teilen
     link_copied: Link kopiert
@@ -119,10 +118,47 @@ post-list:
 
 # for home layout
 home:
-  title: Wiklkommen
-  button_name: Home
-  new_posts_title: Neues
-  new_posts_show_more_button: Mehr sehen ...
+  title: Über mich
+  button_name: Über mich
+
+# for cv layout
+cv:
+  title: Lebenslauf
+  button_name: Lebenslauf
+  job_text: Position
+  company_text: Unternehmen
+  lecture_text: Kurs
+  university_text: Universität
+  institute_text: Institut
+  degree_text: Abschluss
+  start_text: Start
+  end_text: Ende
+
+# for publications layout
+publications:
+  title: Publikationen
+  button_name: Publikationen
+imprint:
+  title: Impressum
+  button_name: Impressum
+
+
+
+
+# for links layout
+links:
+  title: Links
+  button_name: Links
+  link_text: Web site
+  info_text: Info
+
+# for projects layout
+projects:
+  title: Projects
+  button_name: Projects
+  read_more_text: Read more
+  read_less_text: Read less
+  
 
 # for archives layout
 archives:
@@ -152,10 +188,10 @@ projects:
 
 # for privacy-policy layout
 privacy-policy:
-  title: &privacy_policy_title Política de privacidade
+  title: &privacy_policy_title Privacy policy
 
 # constants to be replaced for
 constants:
-  greetings: Olá
-  welcome: Bem vindo
-  sample: Amostra
+  greetings: Hallo
+  welcome: Wilkommen
+  sample: Beispiel

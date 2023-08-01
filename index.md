@@ -36,11 +36,13 @@ img: ":home-heading.jpg"
 # don't forget that this is root index.html. If you disable this, there will be no index.html page to open
 #published: false
 ---
-I am a PhD student. I research in Artificial Intelligence about the combination of Large Language Models and Knowledge Graphs.
+I am a PhD student in the <a href="https://lr.cs.vu.nl/" >L&R research group</a> at <a href="https://vu.nl/">Vrije Universiteit Amsterdam</a>. I am working on Artificial Intelligence research about the combination of Large Language Models and Knowledge Graphs.
+
+Currently, my research is funded by the EU doctoral network <a href="https://doi.org/10.3030/101073307">Learning with multiple representations (LEMUR)</a> as part of the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/" >Marie Skłodowska-Curie Actions</a>. 
 
 <hr/>
 
-# Primary interests: 
+# Primary interests
 * **AI**
 * **Neuro-Symbolic AI**
 * **Large Language Models**

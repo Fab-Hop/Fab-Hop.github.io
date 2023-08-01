@@ -62,7 +62,7 @@
     ,"description": ""
     ,"publisher": {"@id": "http://localhost:4000/#person"}
     ,"inLanguage": "en-US"
-    ,"sameAs": ["https://www.linkedin.com//in/fab-hop","https://github.com/Fab-Hop","https://mathstodon.xyz/@fab","https://orcid.org//0000-0002-7047-2770"]
+    ,"sameAs": ["https://mathstodon.xyz//@fab"]
     ,"copyrightHolder" : {"@id": "http://localhost:4000/#person"}
     ,"copyrightYear" : "2023"
   },{
@@ -100,10 +100,11 @@
 }</script>
 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"/>
 
-<link href="/assets/css/main.css" rel="stylesheet"><link href="/assets/css/nav-media.css" rel="stylesheet">
+<link href="/assets/css/main.css" rel="stylesheet"/><link href="/assets/css/nav-media.css" rel="stylesheet"/>
 
   </head>
 
@@ -135,12 +136,6 @@
         <a href="/" translate="no">Fabian Hoppe</a>
         </div>
       <p>&nbsp;Researcher</p>
-      <br>
-        
-
-<div class="lang-switch">
-  <p>[&nbsp;</p><p>lang count (0) and file count (0) don't match or file count is 0&nbsp;</p><p>]</p>
-</div>
     </div>
     <br>
     <a href="javascript:void(0);" class="side-nav-close">
@@ -150,21 +145,24 @@
     <br>
     <div class="side-nav-buttons">
       <ul class="nav nav-pills nav-stacked">
-        <li ><a href="/" class=" hover-effect"><i class="fa-fw fa fa-home" aria-hidden="true"></i>About</a></li><li ><a href="/tabs/cv.html" class=" hover-effect"><i class="fa-fw fa fa-user-o" aria-hidden="true"></i>CV</a></li><li ><a href="/tabs/publications.html" class=" hover-effect"><i class="fa-fw fa  fa-graduation-cap" aria-hidden="true"></i>Publications</a></li><li ><a href="/tabs/blog/" class=" hover-effect"><i class="fa-fw fa fa-pencil-square-o" aria-hidden="true"></i>Blog</a></li><li ><a href="/tabs/imprint.html" class=" hover-effect"><i class="fa-fw fa fa-info-circle" aria-hidden="true"></i>Imprint</a></li></ul>
+        <li ><a href="/" class=" hover-effect"><i class="fa-fw fa fa-home" aria-hidden="true"></i>About</a></li><li ><a href="/cv.html" class=" hover-effect"><i class="fa-fw fa fa-user-o" aria-hidden="true"></i>CV</a></li><li ><a href="/publications.html" class=" hover-effect"><i class="fa-fw fa  fa-graduation-cap" aria-hidden="true"></i>Publications</a></li><li ><a href="/blog/" class=" hover-effect"><i class="fa-fw fa fa-pencil-square-o" aria-hidden="true"></i>Blog</a></li><li ><a href="/imprint.html" class=" hover-effect"><i class="fa-fw fa fa-info-circle" aria-hidden="true"></i>Imprint</a></li></ul>
     </div>
-    <br>
     <br><div class="contact-container">
   <hr/>
   <h3>Contact</h3>
-  <ul><li><a href="https://www.linkedin.com//in/fab-hop" class="hover-effect-big" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li><li><a href="https://github.com/Fab-Hop" class="hover-effect-big" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></li><li><a href="https://mathstodon.xyz/@fab" class="hover-effect-big" target="_blank" rel="noopener noreferrer"><img src="/assets/img/default/mastodon.svg" /></a></li><li><a href="https://orcid.org//0000-0002-7047-2770" class="hover-effect-big" target="_blank" rel="noopener noreferrer"><img src="/assets/img/default/orcid.svg" /></a></li></ul>
+  <ul><li>
+      <a href="javascript:void(0);" class="hover-effect-big" onclick="setAddress('info', 'fhoppe.com');"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li><li><a href="https://mathstodon.xyz//@fab" class="hover-effect-big" target="_blank" rel="noopener noreferrer"><img src="/assets/img/default/mastodon.svg" /></a></li></ul>
 </div>
 
-    <hr id="toc-view-top">
-    <div class="side-nav-footer" translate="no">
-        <p>&copy; 2023 Fabian Hoppe.</p>
-      </div>
-  </div>
+    </div>
   <div class="side-nav-bottom-buttons-container">
+    <div >
+        
+
+<div class="lang-switch">
+  <p>[&nbsp;</p><p>lang count (0) and file count (0) don't match or file count is 0&nbsp;</p><p>]</p>
+</div>
+    </div>
     <hr>
     <ul>
       <li><div class="color_scheme_switch_side_holder" data-toggle="tooltip" data-placement="top" title="Color scheme">
@@ -180,6 +178,8 @@
   <h1>The Challenges of German Archival Document Categorization on Insufficient Labeled Data</h1>
   <h2>Proceedings of the Third Workshop on Humanities in the Semantic Web (WHiSe 2020), co-located with 15th Extended Semantic Web Conference (ESWC 2020)</h2>
   <h2>Hoppe, Fabian and Tietz, Tabea and Dessì, Danilo and Meyer, Nils and Sprau, Mirjam and Alam, Mehwish and Sack, Harald</h2>
+  
+    <p>Document exploration in archives is often challenging due to the lack of organization in topic-based categories. Moreover, archival records only provide short text which is often insufficient for capturing the semantic. This paper proposes and explores a dataless categorization approach that utilizes word embeddings and TF-IDF to categorize archival documents. Additionally, it introduces a visual approach built on top of the word embeddings to enhance the exploration of data. Preliminary results suggest that current vector representations alone do not provide enough external knowledge to solve this task. </p>
   
   <pre>@inproceedings{hoppe_challenges_2020,
   title = {The {Challenges} of {German} {Archival} {Document} {Categorization} on {Insufficient} {Labeled} {Data}},

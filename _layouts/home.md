@@ -7,7 +7,9 @@ layout: default
 # main page (index.html)
 ---
 
-{%- include multi_lng/get-pages-by-lng.liquid pages = site.posts -%}
+{%- include multi_lng/get-lng-by-url.liquid -%}
+{%- assign lng = get_lng -%}
+
 
 {%- if page.img %}
   {%- if site.data.conf.others.home.header_img_with_img_tag == true -%}
@@ -26,11 +28,11 @@ layout: default
     <div class="col-md-9 about-header">
       <h1 translate="no">{{ site.data.owner[lng].brand }}</h1>
       <div class="meta-container">
-        {%- assign about_title = site.data.owner[lng].brand_sub_text | replace: site.data.conf.main.sample_replace, site.data.lang[lng].constants.sample -%}
-        {%- if site.data.owner[lng].about.sub_title %}
+        {%- assign home_title = site.data.owner[lng].brand_sub_text | replace: site.data.conf.main.sample_replace, site.data.lang[lng].constants.sample -%}
+        {%- if site.data.owner[lng].brand_sub_text %}
           <p class="sub-title">
             {%- if site.data.conf.others.about.sub_title_icon %}<i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>{% endif -%}
-            &nbsp;{{ about_title }}
+            &nbsp;{{ home_title }}
           </p>
         {% endif -%}
         {%- assign tmp_obj =  site.data.owner[lng].contacts | where_exp: "item", "item.email != nil" | first -%}

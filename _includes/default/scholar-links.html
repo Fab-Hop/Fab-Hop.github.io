@@ -1,47 +1,3 @@
-{%-comment-%}
-{%- if site.data.conf.main.contacts_buttons_hover_effect -%}
-  {%- capture effect_contacts_button -%}
-    class="{{ site.data.conf.main.contacts_buttons_hover_effect }}"
-  {%- endcapture %}
-{%- endif -%}
-<div class="scholar-container">
-  <hr/>
-  <ul>
-  {%- for accounts in site.data.owner[lng].scholar -%}
-    {%- assign account_var = accounts | first %}{% assign account_key = account_var[0] %}{% assign account_username = account_var[1] -%}
-    {%- assign scholar_const = site.data.const.scholar[account_key] -%}
-    {%- assign icon_first_chr = nil -%}
-    {%- assign scholar_icon_tag = nil -%}
-    {%- assign icon_first_chr = scholar_const.icon | slice: 0 -%}
-    {%- if scholar_const.icon contains 'http://' or scholar_const.icon contains 'https://' or icon_first_chr == '/' %}
-      {%- capture scholar_icon_tag -%} <img src="{{ scholar_const.icon }}" /> {%- endcapture %}
-    {% else %}
-      {%- capture scholar_icon_tag -%} <i class="{{ scholar_const.icon }}" aria-hidden="true"></i> {%- endcapture %}
-    {% endif -%}
-    <li>
-      {%- if site.data.conf.main.contacts_open_in_new_tab == true -%}
-        {%- capture contact_new_tab_tag_attr -%} target="_blank" {%- endcapture -%}
-        {%- capture contact_new_tab_rel_tag_attr_value -%} noopener noreferrer {%- endcapture -%}
-      {%- endif -%}
-
-      {%- if mastodon_rel_tag_attr_value != nil or site.data.conf.main.contacts_open_in_new_tab == true -%}
-        {%- capture contact_rel_tag_attr -%} {{ mastodon_rel_tag_attr_value }} {{ contact_new_tab_rel_tag_attr_value }} {%- endcapture -%}
-        {%- capture contact_rel_tag_attr -%} rel="{{ contact_rel_tag_attr | strip }}" {%- endcapture -%}
-      {%- endif -%}
-
-      {%- assign tag_url = scholar_const.url | append: account_username -%}
-      <a href="{{ tag_url }}" {{ effect_contacts_button }} {{ scholar_new_tab_tag_attr }} {{ scholar_rel_tag_attr }}>{{ scholar_icon_tag }}</a>
-    </li>
-  {%- endfor -%}
-  </ul>
-</div>
-
-
-{%-endcomment-%}
-
-
-
-
 {%- if site.data.conf.main.contacts_buttons_hover_effect -%}
   {%- capture effect_contacts_button -%}
     class="{{ site.data.conf.main.contacts_buttons_hover_effect }}"
@@ -62,28 +18,17 @@
       {%- capture contact_icon_tag -%} <i class="{{ contact_const.icon }}" aria-hidden="true"></i> {%- endcapture %}
     {% endif -%}
     <li>
-    {%- if account_key == 'email' -%}
-      {%- assign _email = account_username | split: '@' %}
-      <a href="javascript:void(0);" {{ effect_contacts_button }} onclick="setAddress('{{ _email[0] }}', '{{ _email[1] }}');">{{ contact_icon_tag }}</a>
-    {%- else -%}
-      {%- assign mastodon_rel_tag_attr_value = nil -%}
-      {%- if account_key == 'mastodon' and site.data.conf.main.contacts_mastodon_link_verification == true -%}
-        {%- assign mastodon_rel_tag_attr_value = 'me' -%}
-      {%- endif -%}
-
       {%- if site.data.conf.main.contacts_open_in_new_tab == true -%}
         {%- capture contact_new_tab_tag_attr -%} target="_blank" {%- endcapture -%}
         {%- capture contact_new_tab_rel_tag_attr_value -%} noopener noreferrer {%- endcapture -%}
       {%- endif -%}
 
-      {%- if mastodon_rel_tag_attr_value != nil or site.data.conf.main.contacts_open_in_new_tab == true -%}
-        {%- capture contact_rel_tag_attr -%} {{ mastodon_rel_tag_attr_value }} {{ contact_new_tab_rel_tag_attr_value }} {%- endcapture -%}
+      {%- if site.data.conf.main.contacts_open_in_new_tab == true -%}
+        {%- capture contact_rel_tag_attr -%} {{ contact_new_tab_rel_tag_attr_value }} {%- endcapture -%}
         {%- capture contact_rel_tag_attr -%} rel="{{ contact_rel_tag_attr | strip }}" {%- endcapture -%}
+        {%- assign tag_url = contact_const.url | append: account_username -%}
+        <a href="{{ tag_url }}" {{ effect_contacts_button }} {{ contact_new_tab_tag_attr }} {{ contact_rel_tag_attr }}>{{ contact_icon_tag }}</a>
       {%- endif -%}
-
-      {%- assign tag_url = contact_const.url | append: account_username -%}
-      <a href="{{ tag_url }}" {{ effect_contacts_button }} {{ contact_new_tab_tag_attr }} {{ contact_rel_tag_attr }}>{{ contact_icon_tag }}</a>
-    {%- endif -%}
     </li>
   {%- endfor -%}
   </ul>
