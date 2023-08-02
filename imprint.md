@@ -32,4 +32,19 @@ image_lazy_loader_on: true
 #search_engine_exclude: true
 # to disable this page, simply set published: false or delete this file
 #published: false
+
+page_data:
+  main:
+    header: "Imprint"
 ---
+This is the personal website of Fabian Hoppe. Fabian Hoppe is responsible for the contents of this pages. 
+
+Ways to get in touch with me are listed in the contact area of the navigation bar. 
+
+
+## Other Licenses
+This website is based on the [Mr. Green Jekyll Theme](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme), which is licensed under the MIT license.  
+> Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
+
+## Plugins
+* Jekyll-Scholar ([https://github.com/inukshuk/jekyll-scholar](https://github.com/inukshuk/jekyll-scholar))

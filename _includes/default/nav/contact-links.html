@@ -44,7 +44,7 @@
         {%- capture contact_rel_tag_attr -%} rel="{{ contact_rel_tag_attr | strip }}" {%- endcapture -%}
       {%- endif -%}
 
-      {%- assign tag_url = contact_const.url | append:'/' | append: account_username -%}
+      {%- assign tag_url = contact_const.url | append: account_username -%}
       <a href="{{ tag_url }}" {{ effect_contacts_button }} {{ contact_new_tab_tag_attr }} {{ contact_rel_tag_attr }}>{{ contact_icon_tag }}</a>
     {%- endif -%}
     </li>

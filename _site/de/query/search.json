@@ -11,21 +11,21 @@
     ,"category" : ""
     ,"tags"     : ""
     ,"url"      : "/de/publications.html"
-    ,"date"     : "1 Aug, 2023"
+    ,"date"     : "2 Aug, 2023"
     ,"content"  : "Hoppe, F. (2022). Improving Zero-Shot Text Classification with Graph-based Knowledge Representations. Proceedings of the Doctoral Consortium at ISWC 2022, Co-Located with 21st International Semantic Web Conference (ISWC 2022).Details Brate, R., Dang, M.-H., Hoppe, F., He, Y., Meroño-Peñuela, A., &amp; Sadashivaiah, V. (2022). Improving Language Model Predictions via Prompts Enriched with Knowledge Graphs. Workshop on Deep Learning for Knowledge Graphs (DL4KG @ ISWC2022).Details Hoppe, F., Dessì, D., &amp; Sack, H. (2021). Deep Learning Meets Knowledge Graphs for Scholarly Data Classification. Companion Proceedings of the Web Conference 2021.Details Alam, M., Biswas, R., Chen, Y., Dessì, D., Gesese, G. A., Hoppe, F., &amp; Sack, H. (2021). HierClasSArt: Knowledge-Aware Hierarchical Classification of Scholarly Articles. Companion Proceedings of the Web Conference 2021, 436–440. https://doi.org/10.1145/3442442.3451365Details Hoppe, F., Dessì, D., &amp; Sack, H. (2021). Understanding Class Representations: An Intrinsic Evaluation of Zero-Shot Text Classification. Workshop on Deep Learning for Knowledge Graphs (DL4KG @ ISWC2021).Details Hoppe, F., Tietz, T., Dessì, D., Meyer, N., Sprau, M., Alam, M., &amp; Sack, H. (2020). The Challenges of German Archival Document Categorization on Insufficient Labeled Data. Proceedings of the Third Workshop on Humanities in the Semantic Web (WHiSe 2020), Co-Located with 15th Extended Semantic Web Conference (ESWC 2020).Details Gesese, G. A., Hoppe, F., Alam, M., &amp; Sack, H. (2020). Leveraging Multilingual Descriptions for Link Prediction: Initial Experiments. Proceedings of the ISWC 2020 Demos and Industry Tracks: From Novel Ideas to Industrial Practice, Co-Located with 19th International Semantic Web Conference (ISWC 2020).Details"
   },{
     "title"    : "Über mich"
     ,"category" : ""
     ,"tags"     : ""
     ,"url"      : "/de/"
-    ,"date"     : "1 Aug, 2023"
+    ,"date"     : "2 Aug, 2023"
     ,"content"  : "Hallo Beispiel Beispiel Beispiel Beispiel Beispiel"
   },{
     "title"    : "Lebenslauf"
     ,"category" : ""
     ,"tags"     : ""
     ,"url"      : "/de/cv.html"
-    ,"date"     : "1 Aug, 2023"
+    ,"date"     : "2 Aug, 2023"
     ,"content"  : "main header Curriculum Vitae info Test category title Work Experience type id_work color #cce6ff title Teaching type id_teaching color #cce6ff title Education type id_education color #cce6ff work_title Work Experience work_color #cce6ff work_list title Junior Researcher start_date 01.06.2019 end_date 01.03.2023 company FIZ - Karlsruhe description Research on Zero-Shot Text Classification using Knowledge Graphs as auxiliary information as well as development of ontologies and Knowledge Graphs for research data management. title Thesis Student (Master of Science) start_date end_date company description title Research Assistant start_date end_date company description title Thesis Student (Bachelor of Science) start_date end_date company description teaching_title Teaching teaching_color #cce6ff teaching_list title education_title Education education_color #cce6ff education_list title Master of Science (Computer Science) start_date end_date university University of Applied Sciences Karlsruhe description title Bachelor of Science (Computer Science) start_date end_date university University of Applied Sciences Karlsruhe description"
   }
   ]
