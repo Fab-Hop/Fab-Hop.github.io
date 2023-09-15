@@ -40,6 +40,11 @@ page_data:
       
   work_title: "Work Experience"
   work_list:
+    - title: "PhD Student"
+      start_date: "09/2023"
+      end_date: ""
+      company: "Vrije Universiteit Amsterdam"
+      description: "Research on combining Large Language Models and Knowledge Graphs."
     - title: "Junior Researcher"
       start_date: "06/2019"
       end_date: "03/2023"
