@@ -6,30 +6,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 xmlns:xhtml="http://www.w3.org/1999/xhtml"
 xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>http://localhost:4000/de/2021-08-10-Test-page1</loc>
-    <image:image>
-      <image:loc>http://localhost:4000/assets/img/posts/post_pic1.jpg</image:loc>
-      <image:title>First Post</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>http://localhost:4000/posts/2021-08-10-Test-page1</loc>
-    <image:image>
-      <image:loc>http://localhost:4000/assets/img/posts/post_pic1.jpg</image:loc>
-      <image:title>First Post</image:title>
-    </image:image>
   </url>
   <url>
     <loc>http://localhost:4000/archive.html</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/de/cv.html</loc>
-  </url>
-  <url>
     <loc>http://localhost:4000/cv.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:4000/de/imprint.html</loc>
   </url>
   <url>
     <loc>http://localhost:4000/imprint.html</loc>
@@ -38,19 +21,10 @@ xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
     <loc>http://localhost:4000/blog/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/de/blog/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:4000/de/</loc>
-  </url>
-  <url>
     <loc>http://localhost:4000/</loc>
   </url>
   <url>
     <loc>http://localhost:4000/links.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:4000/de/publications.html</loc>
   </url>
   <url>
     <loc>http://localhost:4000/publications.html</loc>

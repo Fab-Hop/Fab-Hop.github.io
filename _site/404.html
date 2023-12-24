@@ -89,10 +89,6 @@
   <div class="side-nav-bottom-buttons-container">
     <div >
         
-
-<div class="lang-switch">
-  <p>[&nbsp;</p><ul translate="no"><li lang="en-US"><a href="/404.html" class=" active-page hover-effect">En&nbsp;</a></li><li lang="de-DE"><a href="/de/404.html" class=" hover-effect">De&nbsp;</a></li></ul><p>]</p>
-</div>
     </div>
     <br>
     <hr>
@@ -111,29 +107,7 @@
   <br>
   <p class="line1">The page you requested could not be found.</p>
   <p class="line2"></p>
-</div><script>
-    let notfound_lng = [["en",{"header":"Page not found","line1":"The page you requested could not be found."}],["de",{"header":"Seite nicht gefunden.","line1":"Die gewünschte Seite konnte leider nicht gefunden werden."}]];
-    if (window.location.pathname !== "/404.html") {
-      function getlang () {
-        let lang = window.location.pathname.replace("", "").split('/');
-        /* Removes first element from array. */
-        lang.shift();
-        /* get current language */
-        return lang[0];
-      }
-      let lang = notfound_lng.filter(res=>res[0] == getlang())[0];
-      if (typeof lang !== "undefined") {
-        /* load 404 texts, then redirect that language. This makes transaction smoother. */
-        if (lang != "en") {
-          document.querySelector('#notfound>h1').textContent = lang[1].header;
-          document.querySelector('#notfound>p.line1').textContent= lang[1].line1;
-          document.querySelector('#notfound>p.line2').textContent = lang[1].line2;
-          window.location.href = '/' + lang[0] + "/404.html";
-        }
-      }
-    }
-    </script>
-  </div><div class="footer-wrapper">
+</div></div><div class="footer-wrapper">
   <div class="footer-container">
     <footer translate="no">
       <div class="footer-text footer-text-centered long-copyright">
@@ -231,7 +205,7 @@
 <script>
   LangOfferMsgBox.currentPageLng = "en";
   LangOfferMsgBox.supportedLngList = [["en","En","/","View this page in English.","To home","Language"],["de","De","/de","Diese Seite auf Deutsch sehen.","To home","Sprache"]];
-  LangOfferMsgBox.existLng = [["de","De","/de/404.html"]];
+  LangOfferMsgBox.existLng = [];
   LangOfferMsgBox.disableExtTranslationOffer = true;
   LangOfferMsgBox.slideType = 'slideBoxTopToDown';
 </script>
