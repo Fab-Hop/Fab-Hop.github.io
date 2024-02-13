@@ -105,7 +105,7 @@ page_data:
     - title: "Bachelor of Science"
       subject: "Computer Science"
       start_date: "09/2013"
-      end_date: "02/2018"
+      end_date: "02/2017"
       university: "University of Applied Sciences Karlsruhe"
       grade: "Overall mark: <b>very good (1.2)</b> with distinction"
       description: "Courses taken (among others): Computer Vision, Embedded Systems, Robotics"
